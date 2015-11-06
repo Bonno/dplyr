@@ -20,7 +20,8 @@ module.exports = function(app) {
     clients.push(remote);
     controller = app.set('mopidy controller');
     addr = crypto.createHash('sha1');
-    addr.update(dnode.stream.remoteAddress);
+    //addr.update(dnode.stream.remoteAddress);
+    addr.update(dnode.stream.headers['x-real-ip'] || dnode.stream.remoteAddress); 
     addr = addr.digest('hex');
     dnode.once('end', function() {
       var index;
