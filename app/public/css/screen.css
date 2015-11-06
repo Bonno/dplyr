@@ -739,7 +739,7 @@ input.input {
   outline-style: none;
 }
 .search-wrap {
-  background-color: #ff0;
+  background-color: #E20B65;
   overflow: hidden;
   position: absolute;
   height: 3.75em;
@@ -755,20 +755,21 @@ input.input {
   width: 3.75em;
 }
 input.search-input::-webkit-input-placeholder {
-  color: #000;
+  color: #FFF;
 }
 input.search-input:-moz-placeholder {
-  color: #000;
+  color: #FFF;
 }
 input.search-input::-moz-placeholder {
-  color: #000;
+  color: #FFF;
 }
 input.search-input:-ms-input-placeholder {
-  color: #000;
+  color: #FFF;
 }
 input.search-input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  color: #FFF;
   box-sizing: border-box;
   height: 3.75em;
   padding: 1.125em 3.75em 1.125em 1.125em;
@@ -899,7 +900,7 @@ input.search-input {
   height: 0.375em;
 }
 .progress-bar {
-  background-color: #fef200;
+  background-color: #E20B65;
   display: block;
   height: 100%;
   -webkit-transition: 1s width linear;
